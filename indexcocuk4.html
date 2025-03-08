@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çocuk Kitap Testi - 0-4 Yaş</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            background: linear-gradient(135deg, #f3f3f3, #ffffff);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+        .photo1 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            height: auto;
+        }
+        .photo2 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 200px;
+            height: auto;
+        }
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            background-color: #F34800;
+            color: white;
+            border: none;
+            width: 100%;
+            max-width: 500px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .button:hover {
+            background-color: #d93d00;
+            transform: scale(1.05);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .photo1, .photo2 {
+                width: 150px; /* Resim boyutunu küçült */
+            }
+            .button {
+                height: 50px; /* Yüksekliği sabit tutuyoruz */
+                font-size: 18px; /* Yazı boyutunu ayarladık */
+            }
+            h2 {
+                font-size: 28px; /* Başlık boyutunu küçült */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .photo1, .photo2 {
+                width: 100px; /* Daha küçük ekranlar için resim boyutunu ayarladık */
+            }
+            .button {
+                height: 45px; /* Yüksekliği biraz artırdık */
+                font-size: 16px; /* Yazı boyutunu ayarladık */
+            }
+            h2 {
+                font-size: 24px; /* Başlık boyutunu daha da küçült */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="photo1.webp" alt="Photo 1" class="photo1">
+    <img src="photo2.webp" alt="Photo 2" class="photo2">
+    <div class="container">
+        <h2>Genç bilim insanımız hangi alanda gerçekleri keşfetmek ister?*
+        </h2>
+        <a href="indexsonuccocuk4.html" class="button">Tarih</a>
+        <a href="indexsonuccocuk6.html" class="button">Bilim</a>
+        <a href="indexsonuccocuk7.html" class="button">Matematik</a>
+        <a href="indexsonuccocuk8.html" class="button">Hobi</a>
+        
+    </div>
+</body>
+</html>
