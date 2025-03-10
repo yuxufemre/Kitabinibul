@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çocuk Kitap Testi - Hobi</title>
+    <title>Sıradaki Kitabın Hangisi?</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         
         body {
             background: linear-gradient(135deg, #f3f3f3, #ffffff);
@@ -13,89 +13,97 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            position: relative;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            position: relative;
+            gap: 20px;
+        }
+        .photo1, .photo2 {
+            position: absolute;
+            top: 10px;
+            width: 150px;
+            height: auto;
         }
         .photo1 {
-            position: absolute;
-            top: 10px;
             left: 10px;
-            width: 200px;
-            height: auto;
         }
         .photo2 {
-            position: absolute;
-            top: 10px;
             right: 10px;
-            width: 200px;
-            height: auto;
         }
-        .container {
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            gap: 30px;
+        }
+        .category {
             text-align: center;
+            flex: 1 1 300px;
+            max-width: 500px;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .images div {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
-            padding: 20px;
         }
-        h2 {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        .images img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .button {
+        .image-button {
+            margin-top: 10px;
             background-color: #F34800;
             color: white;
             border: none;
-            width: 100%;
-            max-width: 500px;
-            height: 50px;
-            font-size: 20px;
+            padding: 10px 20px;
+            font-size: 14px;
             cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
-        .button:hover {
+        .image-button:hover {
             background-color: #d93d00;
             transform: scale(1.05);
-            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
         }
-
         /* Responsive Design */
         @media (max-width: 768px) {
+            .categories {
+                flex-direction: column;
+                align-items: center;
+            }
             .photo1, .photo2 {
-                width: 150px; /* Resim boyutunu küçült */
+                position: relative;
+                width: 120px;
+                margin-bottom: 15px;
             }
-            .button {
-                height: 50px; /* Yüksekliği sabit tutuyoruz */
-                font-size: 18px; /* Yazı boyutunu ayarladık */
+            .images {
+                flex-direction: column;
             }
-            h2 {
-                font-size: 28px; /* Başlık boyutunu küçült */
+            .images img {
+                max-width: 150px;
             }
-        }
-
-        @media (max-width: 480px) {
-            .photo1, .photo2 {
-                width: 100px; /* Daha küçük ekranlar için resim boyutunu ayarladık */
-            }
-            .button {
-                height: 45px; /* Yüksekliği biraz artırdık */
-                font-size: 16px; /* Yazı boyutunu ayarladık */
-            }
-            h2 {
-                font-size: 24px; /* Başlık boyutunu daha da küçült */
+            .image-button {
+                padding: 8px 16px;
+                font-size: 12px;
             }
         }
     </style>
@@ -109,19 +117,24 @@
             <div class="images">
                 <div>
                     <img src="4değerler1.png" alt=>
-                    <a href="https://cdn.timas.com.tr/preview/9786050830156.pdf" class="image-button">İncele</a>
+                    
+                    <a href="https://www.bkmkitap.com/peygamberimizin-mucizeleri-399932?waw_keyword=peygamberimizin%20mucizeleri&_gl=1*sn7sic*_gcl_au*MjQ2MjI0NzMuMTc0MTQzMTU4Nw.." class="image-button">Satın Al</a>
                 </div>
+            
                 <div>
                     <img src="4değeler2.png" alt=>
-                    <a href="https://cdn.timas.com.tr/preview/9786259802022.pdf" class="image-button">İncele</a>
+                    
+                    <a href="https://www.bkmkitap.com/dostluk-pusulasi-peygamberimin-sav-izinde?waw_keyword=dostluk%20pusulas%C4%B1%20g%C3%BClce&_gl=1*1ixzyy6*_gcl_au*MjQ2MjI0NzMuMTc0MTQzMTU4Nw.." class="image-button">Satın Al</a>
                 </div>
                 <div>
                     <img src="4değerler3.png" alt=>
-                    <a href="https://cdn.timas.com.tr/preview/9786050829082.pdf" class="image-button">İncele</a>
+                  
+                    <a href="https://www.bkmkitap.com/merhametli-peygamberim-can-ile-canan-peygamberimizi-seviyoruz?waw_keyword=merhametli%20peygamberi&_gl=1*1ixzyy6*_gcl_au*MjQ2MjI0NzMuMTc0MTQzMTU4Nw.." class="image-button">Satın Al</a>
                 </div>
                 <div>
                     <img src="4değerler4.png" alt=>
-                    <a href="https://cdn.timas.com.tr/preview/9786259802053.pdf" class="image-button">İncele</a>
+                  
+                    <a href="https://www.bkmkitap.com/benim-siyer-sozlugum" class="image-button">Satın Al</a>
                 </div>
                
                 
