@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıradaki Kitabın Hangisi?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        
+        body {
+            background: linear-gradient(135deg, #f3f3f3, #ffffff);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .photo1, .photo2 {
+            position: absolute;
+            top: 10px;
+            width: 150px;
+            height: auto;
+        }
+        h1{ font-weight: 10000;
+            font-size: 60;
+
+        }
+        .photo1 {
+            left: 10px;
+        }
+        .photo2 {
+            right: 10px;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            gap: 30px;
+        }
+        .category {
+            text-align: center;
+            flex: 1 1 300px;
+            max-width: 500px;
+            font-size: 60;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .images div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .images img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid black;
+        }
+        .image-button {
+            margin: 5px; /* Butonlar arasında boşluk */
+            background-color: #F88242;
+            color: #ffff;
+            border: 2px solid #F26A21;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-flex; /* Yan yana dizilmesi için inline-flex kullanıldı */
+            font-weight: 500;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .image-button:hover {
+            background-color: #FBB383;
+            transform: scale(1.05);
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo1, .photo2 {
+                position: relative;
+                width: 120px;
+                margin-bottom: 15px;
+            }
+            .images {
+                flex-direction: row; /* Butonların yan yana dizilmesi için row kullanıldı */
+                justify-content: center; /* Butonları ortalamak için */
+            }
+            .images img {
+                max-width: 150px;
+            }
+            .image-button {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="photo1.webp" alt="Photo 1" class="photo1">
+    <img src="photo2.webp" alt="Photo 2" class="photo2">
+    <div class="categories">
+        <div class="category">
+            <h1>Popüler Kültür</h1>
+            <div class="images">
+                <div>
+                    <img src="popüler.webp" alt="Şer'i Siyaset">
+                    <a href="http://drive.google.com/file/d/1JQAqtf3KbYKDW7VMrJrYYmJjaMYuBqnC/view?usp=sharing" class="image-button">İncele</a>
+                    <a href="https://www.bkmkitap.com/edebiyatin-ilhamiyla-taylor-swift" class="image-button">Satın Al</a>
+                </div>
+                
+                
+            </div>
+        </div>
+       
+</body>
+</html>

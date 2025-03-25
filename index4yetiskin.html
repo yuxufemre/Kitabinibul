@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Testi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            background: linear-gradient(135deg, #f3f3f3, #ffffff);
+            text-align: center;
+            font-family: 'Avenir', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .photo1 {
+            position: absolute;
+            top: 30px;
+            left: Center;
+            width: 200px;
+            height: auto;
+        }
+        .photo2 {
+            position: absolute;
+            top: 130px;
+            right: center;
+            width: 200px;
+            height: auto;
+        }
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        h2 {
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+    text-shadow: none;
+    color: black;
+}
+
+.button {
+    background-color: #F88242;
+    color: #ffff;
+    border: 2px solid #F26A21;
+    width: 610px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #FBB383;
+    transform: scale(1.05);
+}
+
+.top-banner, .bottom-banner {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 32px;
+    }
+    .button {
+        width: 80%;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 28px;
+    }
+    .button {
+        width: 90%;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+    <img src="photo1.webp" alt="Photo 1" class="photo1">
+    <img src="photo2.webp" alt="Photo 2" class="photo2">
+    <div class="container">
+        <h2>Öyleyse, sevgili okurumuzun merakı <br>hangi alana yöneliyor?</h2>
+        <a href="indexyetiskinsonuc5.html" class="button">İnsan, toplum ve düşünce üzerine keşifler</a>
+        <a href="indexyetiskinsonuc6.html" class="button">Evrenin işleyişi, fizik, kimya ve biyoloji</a>
+    </div>
+</body>
+</html>
